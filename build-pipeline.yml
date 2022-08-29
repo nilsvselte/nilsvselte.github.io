@@ -40,6 +40,8 @@ jobs:
         run: echo "Det er $ukedag"
         env:
           ukedag: MANDAG
+      - name: PASSWORD
+        run: echo "Lorem Ipsum"
       - name: build
         run: npm run build
       - name: Deploy 🚀
