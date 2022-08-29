@@ -37,9 +37,10 @@ jobs:
         run: npm ci
       # Step 2: Add deploy to Github pages here! Hot tip - The solution is in the Readme
       - name: DET ER MANDAG
-        run: echo "Det er $ukedag"
+        run: echo "Det er $ukedag og dette er en $secret"
         env:
           ukedag: MANDAG
+          secret: ${{secrets.PASSWORD}}
       - name: PASSWORD
         run: echo "Lorem Ipsum"
       - name: build
